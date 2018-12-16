@@ -15,4 +15,6 @@ spec:
       containers:
       - name: webhook-server
         imagePullPolicy: Never
-        image: localserver
+        image: hela:8443/localserver:v1
+      imagePullSecrets:
+      - name: regcred
